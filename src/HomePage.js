@@ -9,7 +9,7 @@ export default class HomePage extends Component {
     }
 
     async componentDidMount() {
-        let requestData = await request.get('https://thawing-coast-15109.herokuapp.com/animals')
+        let requestData = await request.get('https://thawing-coast-15109.herokuapp.com/dogs')
 
         this.setState( {data: requestData.body })
         console.log(requestData.body)
