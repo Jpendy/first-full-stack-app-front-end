@@ -1,0 +1,23 @@
+
+body {
+    background: yellow;
+}
+
+.list-section {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    width: 500px;
+}
+
+li {
+    margin: 60px;
+    border: 1px solid black;
+    background: lightskyblue;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 1px 2px 8px 4px blue;
+}

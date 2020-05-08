@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import List from './List.js';
 import request from 'superagent';
+import './main.css';
 
 export default class HomePage extends Component {
 
@@ -23,7 +24,7 @@ export default class HomePage extends Component {
         return (
             <div>
 
-               hello
+                <section className="list-section">
                     { 
                         <ul>
                             { this.state.data.map(item => {
@@ -33,9 +34,7 @@ export default class HomePage extends Component {
                         </ul>
                     }
 
-               
-
-              
+                </section>             
 
             </div>
         )
