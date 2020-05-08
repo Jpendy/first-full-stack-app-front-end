@@ -8,8 +8,8 @@ export default class List extends Component {
             <div>
 
                 <li>
-                    <h1> { this.props.listProp.name } </h1>
-                    <h1> { this.props.listProp.cool_factor } </h1>
+                    <h1> { this.props.listProp.breed } </h1>
+                    <h1> { this.props.listProp.awesomeness_score } </h1>
 
                 </li>
                 
