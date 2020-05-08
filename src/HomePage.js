@@ -22,24 +22,20 @@ export default class HomePage extends Component {
        
         return (
             <div>
+
                hello
+                    { 
+                        <ul>
+                            { this.state.data.map(item => {
+                                return <List listProp = { item } />
+                            })
+                             }   
+                        </ul>
+                    }
 
                
-               { this.state.data.map(item => {
-                   return  <h1> { item.name } </h1> 
-               }) }
 
-
-               {/* <h1> { this.state.data } </h1>
-               <h1> { this.state.data } </h1> */}
-
-               {/* { [this.state.data] } */}
-                {/* <ul>
-                    { this.state.data.map(item => {
-                        return <List listProp = { item }  />
-                    }) }
-                    
-                </ul> */}
+              
 
             </div>
         )
