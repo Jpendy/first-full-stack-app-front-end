@@ -5,7 +5,6 @@ import {
     Switch,
 } from "react-router-dom";
 import HomePage from './HomePage.js'
-import DetailPage from './DetailPage.js';
 
 export default class App extends Component {
     render() {
@@ -19,13 +18,7 @@ export default class App extends Component {
                             exact
                             render={(routerProps) => <HomePage {...routerProps} />}                       
                         />
-                        <Route
-                            path="/pokemon/:pokemonName"
-                            exact
-                            render={(routerProps) => <DetailPage {...routerProps} />}
-
-                        />
-
+                        
                     </Switch>
                 </Router>
             </div>

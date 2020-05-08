@@ -12,19 +12,34 @@ export default class HomePage extends Component {
         let requestData = await request.get('https://thawing-coast-15109.herokuapp.com/animals')
 
         this.setState( {data: requestData.body })
+        console.log(requestData.body)
     }
 
 
     render() {
+        
+    
+       
         return (
             <div>
+               hello
+
                
-                <ul>
+               { this.state.data.map(item => {
+                   return  <h1> { item.name } </h1> 
+               }) }
+
+
+               {/* <h1> { this.state.data } </h1>
+               <h1> { this.state.data } </h1> */}
+
+               {/* { [this.state.data] } */}
+                {/* <ul>
                     { this.state.data.map(item => {
                         return <List listProp = { item }  />
                     }) }
                     
-                </ul>
+                </ul> */}
 
             </div>
         )
