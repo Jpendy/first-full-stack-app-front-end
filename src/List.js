@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
+
 
 export default class List extends Component {
     render() {
@@ -8,8 +10,11 @@ export default class List extends Component {
             <div>
 
                 <li>
+
+                    <Link to = { `/dogs/${this.props.listProp.id}` }>
                     <h1> Breed: { this.props.listProp.breed } </h1>
                     <h3> Awesomeness Score: { this.props.listProp.awesomeness_score } </h3>
+                    </Link>
 
                 </li>
                 
