@@ -24,7 +24,6 @@ export default class HomePage extends Component {
        
         return (
             <div>
-                <Header/>
 
                 <section className="list-section">
                     { 

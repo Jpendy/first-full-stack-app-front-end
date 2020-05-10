@@ -23,7 +23,6 @@ export default class DetailPage extends Component {
         console.log('hello' + JSON.stringify(this.state.data))
         return (
             <div>
-                <Header/>
                 <section className= 'list-section'>
 
                     {
