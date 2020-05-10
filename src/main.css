@@ -3,10 +3,36 @@ body {
     background: yellow;
 }
 
+.header-section {
+    background: red;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section a {
+    margin: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background: lightskyblue;
+    box-shadow: 1px 1px 3px 1px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.header-section a:hover {
+    background: lime;
+}
+
 .list-section {
     display: flex;
     justify-content: center;
 }
+
 
 ul {
     list-style: none;

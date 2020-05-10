@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import request from 'superagent';
 import List from './List.js';
 import './main.css';
+import Header from './Header.js';
 
 export default class DetailPage extends Component {
 
@@ -22,14 +23,14 @@ export default class DetailPage extends Component {
         console.log('hello' + JSON.stringify(this.state.data))
         return (
             <div>
-
+                <Header/>
                 <section className= 'list-section'>
 
                     {
                         <ul>
                    
                             <List listProp = { this.state.data } />
-                            
+
                         </ul>
                     }
 
