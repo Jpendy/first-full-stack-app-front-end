@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import List from './List.js';
 import request from 'superagent';
 import './main.css';
+import Header from './Header.js';
 
 export default class HomePage extends Component {
 
@@ -23,6 +24,7 @@ export default class HomePage extends Component {
        
         return (
             <div>
+                <Header/>
 
                 <section className="list-section">
                     { 
