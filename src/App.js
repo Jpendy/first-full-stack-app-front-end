@@ -7,6 +7,7 @@ import {
 import HomePage from './HomePage.js'
 import DetailPage from './DetailPage.js'
 import Header from './Header.js'
+import FormPage from './FormPage.js';
 
 export default class App extends Component {
     render() {
@@ -28,6 +29,13 @@ export default class App extends Component {
                             path="/dogs/:id"
                             exact
                             render={(routerProps) => <DetailPage {...routerProps} />}
+
+                        />
+
+                        <Route
+                            path="/form/"
+                            exact
+                            render={(routerProps) => <FormPage {...routerProps} />}
 
                         />
                     </Switch>

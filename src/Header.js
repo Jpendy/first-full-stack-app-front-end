@@ -9,7 +9,7 @@ export default class Header extends Component {
                 <section className="header-section" >
 
                 <Link to={ '/' }>Home</Link>
-                <Link to={ '/' }>Add Dog</Link>
+                <Link to={ '/form/' }>Add Dog</Link>
                 </section>
                 
             </div>

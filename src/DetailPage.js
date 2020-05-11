@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import request from 'superagent';
 import List from './List.js';
 import './main.css';
-import Header from './Header.js';
 
 export default class DetailPage extends Component {
 

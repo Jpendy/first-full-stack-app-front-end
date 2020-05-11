@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import List from './List.js';
 import request from 'superagent';
 import './main.css';
-import Header from './Header.js';
 
 export default class HomePage extends Component {
 
@@ -11,7 +10,7 @@ export default class HomePage extends Component {
     }
 
     async componentDidMount() {
-        let requestData = await request.get('https://thawing-coast-15109.herokuapp.com/dogs')
+        let requestData = await request.get('https://thawing-coast-15109.herokuapp.com/dogs/')
 
         this.setState( {data: requestData.body })
         console.log(requestData.body)
