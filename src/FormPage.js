@@ -12,8 +12,9 @@ export default class FormPage extends Component {
 
     handleSubmit = async (e) => {
         e.preventDefault();
+        const profile = this.state;
 
-        await request.post(`https://thawing-coast-15109.herokuapp.com/dogs/`,`${this.state}`)
+        await request.post(`https://thawing-coast-15109.herokuapp.com/dogs/`, profile)
 
         // this.setState( { newDog: requestedData.body })
         console.log('submit' + this.state)
