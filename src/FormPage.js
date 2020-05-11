@@ -6,7 +6,8 @@ export default class FormPage extends Component {
 
     state = {
         breed: '',
-        awesomeness_score: 0
+        awesomeness_score: 0,
+        have_owned: false
     }
 
 
@@ -28,7 +29,7 @@ export default class FormPage extends Component {
 
     render() {
 
-        const { breed, awesomeness_score } = this.state;
+        const { breed, awesomeness_score, have_owned } = this.state;
 
         return (
             <div className="form-div" >
@@ -43,6 +44,16 @@ export default class FormPage extends Component {
                 <label> 
                     {`Awesomeness-Score: `}  
                     <input onChange = { this.handleChange } value = { awesomeness_score } name = 'awesomeness_score' />  
+                </label>
+
+                <label>  
+                    Have Owned 
+                    <input onChange = { this.handleChange } checked = { have_owned === 'true' } name = 'have_owned' type ='radio' value ='true' />
+                </label>
+
+                <label> 
+                    Have Not Owned  
+                    <input onChange = { this.handleChange } checked = { have_owned === 'false' } name = 'have_owned' type ='radio' value ='false' />  
                 </label>
 
                 <button>Submit</button>
