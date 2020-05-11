@@ -16,10 +16,6 @@ export default class FormPage extends Component {
 
         await request.post(`https://thawing-coast-15109.herokuapp.com/dogs/`, newProfile)
 
-        // this.setState( { newDog: requestedData.body })
-        console.log('submit' + this.state)
-        // this.setState( { newDog: data })
-
     }
 
 
@@ -28,7 +24,6 @@ export default class FormPage extends Component {
         newState[e.target.name] = e.target.value;
 
         this.setState(newState);
-        console.log(this.state)
     }
 
     render() {
