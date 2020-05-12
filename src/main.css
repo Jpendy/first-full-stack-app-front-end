@@ -1,0 +1,91 @@
+
+body {
+    background: yellow;
+}
+
+.header-section {
+    background: red;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section a {
+    margin: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background: lightskyblue;
+    box-shadow: 1px 1px 3px 1px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.header-section a:hover {
+    background: lime;
+}
+
+.list-section {
+    display: flex;
+    justify-content: center;
+}
+
+
+ul {
+    list-style: none;
+    width: 500px;
+}
+
+li {
+    margin: 60px;
+    border: 1px solid black;
+    background: lightskyblue;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 1px 2px 8px 4px blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-div {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+form button {
+    margin: 30px auto;
+}
+
+
+.button-div {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-div button {
+    border: 1px solid red;
+    border-radius: 20px;
+    height: 50px;
+    width: 80px;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 1px 2px 4px 2px orangered;
+}
+
+.button-div button:hover {
+    background: lime;
+    transform: scale(1.1);
+}
