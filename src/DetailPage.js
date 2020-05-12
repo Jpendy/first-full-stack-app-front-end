@@ -13,27 +13,37 @@ export default class DetailPage extends Component {
     
     async componentDidMount() {
 
-        const requestedData = await request.get(` https://thawing-coast-15109.herokuapp.com/dogs/${this.props.match.params.id}`);
+        const requestedData = await request.get(`https://thawing-coast-15109.herokuapp.com/dogs/${this.props.match.params.id}`);
         console.log(requestedData.body)
         this.setState({ data: requestedData.body[0] })
     }
+
+
+    handleClick = async () => {
+        await request.delete(`https://thawing-coast-15109.herokuapp.com/dogs/${this.props.match.params.id}`)
+
+
+    }
+
 
     render() {
         console.log('hello' + JSON.stringify(this.state.data))
         return (
             <div>
+                
+
+                
+                <div className="button-div">
+                <button onClick={ this.handleClick }>Delete</button>
+                </div>
+
                 <section className= 'list-section'>
-
                     {
-                        <ul>
-                   
+                        <ul>                  
                             <List listProp = { this.state.data } />
-
                         </ul>
                     }
-
                 </section>  
-
             </div>
         )
     }
