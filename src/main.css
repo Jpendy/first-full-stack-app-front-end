@@ -67,3 +67,25 @@ form {
 form button {
     margin: 30px auto;
 }
+
+
+.button-div {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-div button {
+    border: 1px solid red;
+    border-radius: 20px;
+    height: 50px;
+    width: 80px;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 1px 2px 4px 2px orangered;
+}
+
+.button-div button:hover {
+    background: lime;
+    transform: scale(1.1);
+}

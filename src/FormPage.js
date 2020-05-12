@@ -7,6 +7,7 @@ export default class FormPage extends Component {
     state = {
         breed: '',
         awesomeness_score: 0,
+        neuroticism_level: '',
         have_owned: false
     }
 
@@ -29,7 +30,7 @@ export default class FormPage extends Component {
 
     render() {
 
-        const { breed, awesomeness_score, have_owned } = this.state;
+        const { breed, awesomeness_score, have_owned, neuroticism_level } = this.state;
 
         return (
             <div className="form-div" >
@@ -44,6 +45,11 @@ export default class FormPage extends Component {
                 <label> 
                     {`Awesomeness-Score: `}  
                     <input onChange = { this.handleChange } value = { awesomeness_score } name = 'awesomeness_score' />  
+                </label>
+
+                <label> 
+                    {`Neuroticism Level(1-3): `}  
+                    <input onChange = { this.handleChange } value = { neuroticism_level } name = 'neuroticism_level' />  
                 </label>
 
                 <label>  
